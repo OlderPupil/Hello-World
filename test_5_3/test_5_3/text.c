@@ -38,6 +38,7 @@ int main()
 int main()
 {
 	int i = 1000;
+	int count = 0;
 	printf("1000年--2000年之间的闰年:\n");
 	while (i >= 1000 && i <= 2000)
 	{
@@ -45,10 +46,12 @@ int main()
 		{
 			printf("%d ", i);
 			i++;
+			count++;
 		}
 		else 
 			i++;
 	}
+	printf("\ncount=%d", count);
 	return 0;
 
 }
